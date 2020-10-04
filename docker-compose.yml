@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  app:
+    image: rust
+    container_name: stock2push
+    working_dir: /app
+    environment:
+      - USER=$USER
+    volumes:
+      - ./stock2push:/app:delegated
